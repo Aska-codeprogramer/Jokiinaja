@@ -1,0 +1,203 @@
+body {
+    background-color: #020b1f;
+}
+h1 span {
+    background: linear-gradient(45deg, #ffd700, #ffcc00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1 {
+    color: white;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+}
+.home {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+.caption-p1-home {
+    color: gray;
+    width: 90%;
+}
+.button-order {
+    background-color:  #ffd700;
+    border-radius: 7px;
+    padding: 10px 20px;
+    line-height: 20px;
+    cursor: pointer;
+    border: none;
+    margin-right: 5px;
+}
+.button-order:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}
+.button-layanan {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 7px 20px;
+    border-radius: 7px;
+}
+.button-layanan:hover {
+    backdrop-filter: blur(10px);
+    background: none;
+}
+.text-home {
+    margin-top: 70px;
+}
+.pembungkus-img {
+    position: relative;
+    display: inline-block;
+}
+.pembungkus-img::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110%;
+    height: 110%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, #1a2640, transparent);
+    filter: blur(40px);
+    z-index: -1;
+}
+.foto1 {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+}
+.h2-layanan {
+    margin-top: 12vh;
+}
+.layanan-card {
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.icon {
+    font-size: 30px;
+    background: #f1f3f5;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+.pembungkus-card-layanan {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.layanan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.statistik {
+    padding-top: 30px;
+    margin-top: 5%;
+}
+.s-s {
+    padding-bottom: 30px;
+}
+#stats {
+    background: rgba(255,255,255,0.02);
+}
+#blog {
+    background: rgba(255,255,255,0.02);
+    padding: 60px 0;
+}
+
+.blog-card {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.blog-card img {
+    height: 200px;
+    object-fit: cover;
+}
+#order {
+    padding: 60px 0;
+    background: rgba(255,255,255,0.02);
+}
+
+.order-card {
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(10px);
+}
+
+
+/* Tablet */
+@media (max-width: 992px) {
+    .home {
+        height: auto;
+        padding: 80px 0;
+    }
+    .text-home {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .caption-p1-home {
+        width: 100%;
+    }
+    .button-order,
+    .button-layanan {
+        margin-top: 10px;
+    }
+}
+
+/* HP */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 0;
+    }
+    .text-home {
+        margin-top: 0;
+    }
+    .pembungkus-img {
+        margin-top: 30px;
+    }
+    .foto1 {
+        border-radius: 20px;
+    }
+    .h2-layanan {
+        margin-top: 60px;
+        font-size: 24px;
+    }
+}
+/* HP kecil */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    .button-order,
+    .button-layanan {
+        width: 100%;
+        display: block;
+    }
+}
